@@ -1,0 +1,36 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Sponsors Section
+--------------------------------------------------------------*/
+.sponsors {
+  --background-color: color-mix(in srgb, var(--alt-background-color), transparent 95%);
+
+  .clients-wrap {
+    border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+    border-left: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  }
+
+  .client-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+    border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+    overflow: hidden;
+
+    img {
+      padding: 50px;
+      max-width: 80%;
+      transition: 0.3s;
+
+      @media (max-width: 640px) {
+        padding: 30px;
+        max-width: 50%;
+      }
+    }
+
+    &:hover img {
+      transform: scale(1.1);
+    }
+  }
+}
